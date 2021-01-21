@@ -26,6 +26,11 @@ app.get('/api/lowestNum', function(req, res) {
     }
 })
 
+.delete('/api/delete', function(req,res) {
+    var file = req.header('file')
+    fs.unlinkSync(`${__dirname}/sorting/tosort/${file}`)
+})
+
 .use('/', express.static(`${__dirname}/indegz/`))
 .use('/sort/tosort', express.static('./sorting/tosort'))
 .use('/sort/sorted', express.static('./sorting/sorted'))
