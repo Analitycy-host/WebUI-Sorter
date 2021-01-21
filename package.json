@@ -1,0 +1,27 @@
+{
+  "name": "GUI-Sorter",
+  "version": "1.0.0",
+  "description": "GUI-Sorter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "nodemon": "nodemon express.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projekt-host/GUI-Sorter.git"
+  },
+  "keywords": [],
+  "author": "mrtalon63 <marcin@mczop.co.pl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/projekt-host/GUI-Sorter/issues"
+  },
+  "homepage": "https://github.com/projekt-host/GUI-Sorter#readme",
+  "dependencies": {
+    "electron": "^11.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
