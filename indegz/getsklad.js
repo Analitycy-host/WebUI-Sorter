@@ -97,7 +97,59 @@ function sendSklad182() {
     })
 }
 
+function sendSkladEu44() {
+    var file = document.getElementById("ajdi2").innerHTML
+    fetch(sortapi, {
+        method: 'POST',
+        headers: {
+            'typ': "eu44",
+            'file': file
+        }
+    }).then(response => {
+        return response.json()
+    }).then(data => {
+    })
+}
+
+function sendSkladE189() {
+    var file = document.getElementById("ajdi2").innerHTML
+    fetch(sortapi, {
+        method: 'POST',
+        headers: {
+            'typ': "e189",
+            'file': file
+        }
+    }).then(response => {
+        return response.json()
+    }).then(data => {
+    })
+}
+
+function sendSkladImpuls() {
+    var file = document.getElementById("ajdi2").innerHTML
+    fetch(sortapi, {
+        method: 'POST',
+        headers: {
+            'typ': "impuls",
+            'file': file
+        }
+    }).then(response => {
+        return response.json()
+    }).then(data => {
+    })
+}
+
 function sendOtherSklad() {
-    //var typ = document.getElementById("inny").value
-    console.log(document.getElementById("ajdi2").innerHTML)
+    var typ = document.getElementById("inny").value
+    var file = document.getElementById("ajdi2").innerHTML
+    fetch(sortapi, {
+        method: 'POST',
+        headers: {
+            'typ': typ,
+            'file': file
+        }
+    }).then(response => {
+        return response.json()
+    }).then(data => {
+    })
 }
